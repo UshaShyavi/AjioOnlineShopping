@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(image.jpg);
+            position: fixed;
+        }
+        .logo{
+            margin-left: 5em;
+            margin-top: 2em;
+            border-radius: 5em;
+        }
+        .nav{
+            left: 7em;
+            text-decoration: none;
+            font-size: 30px;
+            color: black;
+            display: inline-block;
+            font-style: italic;
+            font-weight: bolder;
+            font-family: Vollkorn;
+            margin-left: 3em;
+            position: relative;
+            bottom: 3em;
+            word-spacing: 40px;
+        }
+        .list{
+            border-radius: 8px;
+            display: inline-block;
+            
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .searchbar{
+            height: 40px;
+            width: 20%;
+            padding-left: 10px;
+            border-radius: 5px;
+            
+        } 
+        .pr{
+            margin-left: 5em;
+            position: fixed;
+            margin-top: 3em;
+
+        }
+        ul>li{
+            list-style-type: none;
+            float: left;
+            text-align: center;
+            padding: 40px 16px;
+            text-decoration: none;
+            font-size: 30px;
+            color: black;
+            font-style: italic;
+            font-weight: bolder;
+            font-family: Vollkorn;
+            position: relative;
+            bottom: 1em;
+            margin-left: 15em;
+            margin-right: -10em;
+            margin-top: 1em;
+        }
+        .sub{
+            float: left;
+            font-size: 30px;
+            color: black;
+            font-style: italic;
+            font-family: Vollkorn;
+            position: relative;
+            bottom: 1em;
+            margin-left: 17em;
+            margin-right: -10em;
+            word-spacing: 7em;
+        
+        }
+        h3{
+            margin-left: 5em;
+            font-size: 30px;
+            font-style: italic;
+            font-family: Vollkorn;
+        }
+        h4{
+            margin-left: 60em;
+            margin-top: 3em;
+        }
+        .wrap{
+            width: 70%;
+            margin: auto;
+            margin-left: 10em;
+            margin-top: 5em;
+            position: fixed;
+        }
+        .product{
+            box-shadow: black;
+            width: 30%;
+            height: 10em;
+            text-align: center;
+            font-size: 18px;
+            float: left;
+            margin: 10px;
+            border-radius: 10px;
+            background: #fff;
+            position: relative;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            left: 40em;
+            margin-top: 7em;
+        }
+        button{
+            margin-top: 20px;
+            margin-left: 50px;
+            background-color: rgb(9, 10, 14);
+            color: #ffffff;
+            width: 50%;
+            padding: 10px 20px;
+            border: none;
+            height: 60px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        button a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="../images/logo.jpg" alt="logo" width="13%" height="13%">
+    <h3>Cart</h3>
+    <div>
+        <div class="pr">
+            <img src="../images/longfrock.jpg" width="100%">
+        </div>
+        <nav>
+            <ul>
+                <li >Product</li>
+                <li>Price</li>
+                <li>Quantity</li>
+                <li>Total</li>
+            </ul>
+        </nav>
+        <div class="sub"><span name="product">LongTop</span>
+            <p name="price">$950</p>
+            <p name="Quntity"> 2</p>
+            <p name="Total">$1900</p>
+        </div>
+        <div>
+            <div>
+                <div class="wrap">
+                    <div class="product">
+                        Cart Info<br>
+                        <div class="db">Shipping rate : 10.00<br>
+                            Total : $2000<br>
+                            <button><a href="paymentpage">Proceed to Payment</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            position: scroll;
+        }
+        .product{
+            box-shadow: black;
+            width: 300px;
+            height: 400px;
+            text-align: center;
+            font-size: 18px;
+            float: left;
+            margin: 10px;
+            margin-left: 100px;
+            border-radius: 10px;
+            background: #fff;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            position: relative;
+            bottom: 20px;
+            background-color: lightgray;
+        }
+        .logo{
+            margin-left: 3em;
+            margin-top: -1em;
+
+        }
+        .searchbar{
+            border-radius: 15px;
+            width: 25%;
+            height: 33px;
+            border-color: rgb(128, 128, 128);
+            padding-left: 1em;
+        }
+        .hd{
+            margin-left: 20em;
+            word-spacing: 30px;
+            margin-top: -2em;
+        }
+        .hd a{
+            text-decoration: none;
+            color: grey;
+        }
+        .Menus{
+            margin-left: 62rem;
+            word-spacing: 5px;
+        }
+        .Menus a{
+            text-decoration: none;
+            color: grey;
+        }
+        .wishlist{
+            width: 4%;
+            border-radius: 8px;
+        }
+        .wrap{
+            width: 1000px;
+            margin: auto;
+            margin-top: 80px;
+        }
+        .btn{
+            background-color: rgb(115, 108, 120);
+            width: 10%;
+            height: 30px;
+            border-radius: 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="Menus">Name
+            <a href="Account.html">My Account</a>
+            <a href="Chat.html">Chat Box</a>
+        </div>
+        <div class="logo">
+            <img src="logo.jpg" alt="logo" width="13%" height="13%">
+            <div class="hd">
+                <a class="active" href="men.html">MEN</a>
+                <a href="Women.html">WOMEN</a>
+                <a href="Kids.html">KIDS</a>
+                <a href="Indie.html">INDIE</a>
+                <a href="home&kitchen.html">HOMEANDKITCHEN</a>
+                <input type="text" name="Searchbar" class="searchbar" placeholder="Search">
+                <a href="wishlist.html"><img src="wishlist.jpg" class="wishlist"></a>
+                <a href="cart.html"><img src="cart.jpg" class="wishlist"></a>
+            </div>
+        </div>
+            <div class="wrap">
+                <div class="product">
+                    <img src="curtain3.jpg" alt="Curtains" width="80%" height="350px">
+                </div>
+                <div class="pr">
+                    <h3>Cream curtain</h3>
+                    <h4>$600</h4>
+                    <select name="Size" class="id1">
+                        <option value="number">Select Size</option>
+                        <option value="number">6 Feet</option>
+                        <option value="number">7 Feet</option>
+                        <option value="number">9 Feet</option>
+                        <option value="number">5 Feet</option>
+                    </select><br><br>
+                    <label for="quantity">Quantity :</label>
+                    <input type="number" id="quantity"  class="qty" name="quantity" min="1" max="5"><br><br>    
+                    <a href="cart.html"><button class="btn">Add to Cart</button></a>
+                    <h4>PRODUCT DETAILS</h4>
+                    <p>Name : Elegant Fashionable Curtains & Sheers<br>
+
+                        Material : Polyester<br>
+                        
+                        Length : Window<br>
+                        
+                        Multipack : 4
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

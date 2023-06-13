@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Form</title>
+    <style>
+    body {
+        background-image: url(image.jpg);
+    }
+    form {
+        background-image: url(img.jpg);
+        max-width: 500px;
+        height: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        border-radius: 20px;
+        border: 1px solid #cccccc;
+        box-shadow: 0px 0px 10px #5d5d5d;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 10px;
+        font-family: 'arial';
+        color: rgb(98, 98, 197);
+        margin-top: 50px;
+    }
+    .input-group {
+        margin-bottom: 20px;
+        margin-top: 25px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="password"] {
+        padding: 5px;
+        width: 500px;
+        height: 35px;
+        border: 1px solid #8d8d8d;
+        border-radius: 20px;
+    }
+    .btn {
+        margin-top: 10px;
+        background-color: rgb(77, 100, 167);
+        color: #ffffff;
+        width: 500px;
+        padding: 10px 20px;
+        border: none;
+        height: 60px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    .btn a{
+        text-decoration: none;
+    }
+    .btn:hover {
+        background-color: rgb(95, 118, 200);
+    }
+    h4{
+        color: #161414;
+    }
+    </style>
+    <script>
+        function validate_inputs()
+        {
+            var email=document.register.email.value;
+            var password=document.register.password.value;
+
+            if(email=="")
+            {
+                alert("email cannot be blank");
+                return false;
+            }
+            else if(password=="")
+            {
+                alert("password is incorrect")
+                return false;
+
+            }
+            else{
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Welcome to AJIO<br>
+        Login
+    </h2>
+    <form action="/login" name="register" method="post">
+        <div class="input-group">
+          <label>Email:</label>
+          <input type="text" name="email" id="email" placeholder="enter your email">
+        </div>
+        <div class="input-group">
+          <label>Password:</label>
+          <input type="password" name="password" id="password" placeholder="Enter Password">
+        </div>
+        <div>
+          <input type="checkbox">Remember me
+        </div>
+        <input type="submit" class="btn" onclick="return validate_inputs()"/>
+        
+        <div>
+          <h4>Don't have an Account..?</h4> <h4>Forgot password</h4>
+        </div>
+      </form>
+</body>
+</html>

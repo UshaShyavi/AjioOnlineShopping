@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            position: fixed;
+        }
+        
+        .logo{
+            margin-left: 3em;
+            margin-top: -1em;
+
+        }
+        .searchbar{
+            border-radius: 15px;
+            width: 25%;
+            height: 33px;
+            border-color: rgb(128, 128, 128);
+            padding-left: 1em;
+        }
+        .hd{
+            margin-left: 20em;
+            word-spacing: 30px;
+            margin-top: -2em;
+        }
+        .hd a{
+            text-decoration: none;
+            color: grey;
+        }
+        .Menus{
+            margin-left: 62rem;
+            word-spacing: 5px;
+        }
+        .Menus a{
+            text-decoration: none;
+            color: grey;
+        }
+        .wishlist{
+            width: 4%;
+            border-radius: 8px;
+        }
+        .page{
+            width: 100%;
+            margin-top: 2em;
+        }
+        .Box{
+            width: 300px;
+            height: 450px;
+            background-color: whitesmoke;
+            box-shadow: 2px 2px white;
+            text-align: center;
+        }
+        h1{
+            padding-top: 2rem;
+        }
+        h3{
+            padding-top: 1rem;
+        }
+        .Box-2{
+            width: 800px;
+            height: 450px;
+            background-color: whitesmoke;
+            box-shadow: 2px 2px white;
+            text-align: center;
+            float: right;
+            margin-top: -28em;
+            margin-right: 5em;
+        }
+        .list{
+            float: left;
+            margin-left: 4em;
+            margin-top: 2em;
+            width: 150px;
+            height: 35px;
+            color: black;
+            font-style: bold;
+        }
+        h3{
+            margin-top: 5em;
+            text-align: center;
+        }
+        .product{
+            box-shadow: black;
+            width: 250px;
+            text-align: center;
+            font-size: 18px;
+            float: left;
+            margin: 10px;
+            border-radius: 10px;
+            background: #fff;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            position: relative;
+            bottom: 25px;
+        }
+        button{
+            width: 20%;
+            height: 35px;
+        }
+        .profile{
+            color: gray;
+            font-size: 17px;
+
+        }
+
+        a{
+            text-decoration: none;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="Menus">Name
+            <a href="Account">My Account</a>
+            <a href="Chat">Chat Box</a>
+        </div>
+        <div class="logo">
+            <img src="../images/logo.jpg" alt="logo" width="13%" height="13%">
+            <div class="hd">
+                <a class="active" href="men">MEN</a>
+                <a href="Women">WOMEN</a>
+                <a href="Kids">KIDS</a>
+                <a href="Indie">INDIE</a>
+                <a href="homekitchen">HOMEANDKITCHEN</a>
+                <input type="text" name="Searchbar" class="searchbar" placeholder="Search">
+                <img src="../images/wishlist.jpg" class="wishlist">
+                <img src="../images/cart.jpg" class="wishlist">
+            </div>
+            <div class="Box">
+                <h1>My Account</h1>
+                <h3>Orders</h3>
+                <h3>Profile</h3>
+                <div class="profile">
+                   <a href="profile"> Personal Information </a>
+                </div>
+                <div class="profile">
+                   <a href="paymentpage"> Payment </a>
+                </div>
+            </div>
+            <div class="Box-2">
+                <h1>My Orders</h1>
+            
+            <select name="Last 6 months" id="months" class="list">
+                <option value="Last 6 months">Last 6 months</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2021">2020</option>
+                <option value="2021">2019</option>
+            </select>
+            <br><br>
+            <div class="product">
+                <img src="../images/longtop.jpg" alt="Women Dress" width="50%" height="200px">
+            </div>  
+            <div class="product">
+                <img src="../images/silksaree.jpg" alt="Women Dress" width="50%" height="200px">
+            </div>
+          
+        </div>
+    </div>
+</body>
+</html>
